@@ -1,0 +1,270 @@
+/* 
+div> ul> li:first-child{ 
+  color:aqua
+}
+
+li:last-child{
+  color: blueviolet;
+}
+
+li:nth-child(2){
+  color: brown;
+}
+
+li:nth-child(4){
+  color: forestgreen;
+}
+
+li:nth-child(even){
+  color: chartreuse;
+*/
+
+/* 
+.positioned{
+  position: relative;
+  left: 50px;
+  top: 20px;
+}
+ */
+
+/* 
+ *{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .wapper{
+  width: 1200px;
+  min-height: 200vh;
+  background-color:blue; margin: 0 auto;
+ }
+
+ .inner{
+  width: 900px;
+  min-height: inherit;
+  background-color: green; margin: 0 auto;
+ }
+
+ .positioned{
+  width: 100px;
+  height: 100px;
+  border: 4px solid black;
+  background-color: yellow;
+ }
+ .relative{
+  position: relative;
+  top: 50px;
+  left: 40px;
+ }
+
+
+
+ .fixed{
+  background-color: crimson;
+  position: fixed;
+  top: 50px;
+  right: 400px;
+ }
+
+
+
+ .absolute{
+  background-color: aqua;
+  position: absolute;
+  top: 150px;
+  right:500px 
+ }
+
+ 
+
+ .sticky{
+  background-color: bisque;
+  position: sticky;
+  top: 0px;
+ } */
+
+/* .div1{
+  position: absolute;
+  top: 20px;
+  left: 150px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: black;
+ }
+
+.div2{
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: black;
+}
+
+ .div3{
+  position: absolute;
+  top: 20px;
+  left: 350px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: black;
+ } */
+
+/* .text::first-letter{
+  color: aqua;
+  font-size: 20px;
+  font-weight: bold;
+ }
+
+ .text::first-line{
+  color: blue;
+ }
+
+ .text::selection{
+  background-color: bisque;
+ }
+
+ li{
+  border: 5px solid black;
+  padding: 10px;
+  margin-top: 5px;
+ }
+
+ li::before{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  content: 'Lorem';
+ } */
+
+.main {
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+}
+
+.sales {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  background: rgb(249, 160, 160);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 160, 160, 1) 0%,
+    rgba(255, 106, 70, 1) 35%,
+    rgba(255, 64, 125, 1) 100%
+  );
+  border-radius: 10px;
+  height: 130px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.orders {
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 20px;
+  padding: 20px;
+  background: rgb(144, 233, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(144, 233, 255, 1) 0%,
+    rgba(117, 202, 255, 1) 35%,
+    rgba(44, 141, 252, 1) 100%
+  );
+  border-radius: 10px;
+  height: 130px;
+  width: 250px;
+  overflow: hidden;
+}
+.visitors {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 20px;
+  background: rgb(145, 255, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(145, 255, 179, 1) 0%,
+    rgba(101, 221, 123, 1) 35%,
+    rgba(35, 215, 84, 1) 94%
+  );
+  border-radius: 10px;
+  height: 130px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 15px;
+  position: relative;
+  top: -5px;
+  left: 10px;
+}
+
+.rise {
+  font-size: 15px;
+  position: relative;
+  left: 10px;
+  top: 40px;
+}
+
+.number {
+  font-size: 27px;
+  position: relative;
+  left: 10px;
+  top: 9px;
+}
+
+.icon {
+  position: relative;
+  width: 20px;
+  left: 215px;
+  bottom: 65px;
+}
+
+.sales:hover::after,
+.sales:hover::before,
+.visitors:hover::after,
+.orders:hover::after,
+.orders:hover::before,
+.visitors:hover::before {
+  content: "";
+  position: relative;
+  opacity: 0.1;
+  transition: opacity 300ms ease-in;
+}
+
+.sales::after,
+.orders::after,
+.visitors::after {
+  position: relative;
+  content: "";
+  background-color: aliceblue;
+  opacity: 0.5;
+  left: 60px;
+  top: 35px;
+  padding: 75px;
+  border-radius: 50%;
+}
+
+.sales::before,
+.orders::before,
+.visitors::before {
+  position: relative;
+  content: "";
+  background-color: aliceblue;
+  opacity: 0.5;
+  left: 180px;
+  top: 35px;
+  padding: 65px;
+  border-radius: 50%;
+}
