@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <title>Example</title>
+  </head>
+  <body>
+
+    <form class="form">
+
+      <fieldset class="title">
+        <legend><h1 class="register">Register</h1></legend>
+      </fieldset>
+
+      <div class="create">
+        <p>Create your account. It's free and only takes a minute.</p>
+      </div>
+      
+        <div class="name">
+
+      <input type="text" class="first-name" placeholder="First Name" required name="first-name" pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ']{1,20}" autocomplete="given-name" autofocus>
+
+      <input type="text" class="last-name" placeholder="Last Name" required name="last-name" autocomplete="family-name" pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ']{1,20}">
+
+        </div>
+        <div class="data">
+
+      <input type="email" class="email" placeholder="Email" required name="email" autocomplete="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+
+      <input type="password" class="password" placeholder="Password" required name="password" autocomplete="new-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+      title="Пароль має містити мінімум 8 символів, включаючи одну цифру, одну маленьку та велику літери."> 
+
+      <input type="password" class="confirm-password" placeholder="Confirm Password" required name="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+      title="Пароль має містити мінімум 8 символів, включаючи одну цифру, одну маленьку та велику літери.">
+
+        </div>
+        <div class="policy">
+
+      <input type="checkbox" class="checkbox" required name="policy" required value="accept">
+          
+      <div class="text-checkbox">
+        <p> I accept the 
+          <a href="#" class="href">Terms of Use</a>  
+          & 
+          <a href="#" class="href">Privacy Policy</a> 
+          . 
+        </p>
+      </div>
+        </div>
+
+        <div class="button">
+      <button type="submit" class="submit">Register Now</button>
+        </div>
+
+    </div>
+    </form>
+  </body>
+</html>
