@@ -144,14 +144,14 @@ li:nth-child(even){
   content: 'Lorem';
  } */
 
-.main {
+.cards {
   display: inline-block;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   color: aliceblue;
 }
 
-.sales {
+.sales{
   display: inline-block;
   margin-top: 20px;
   margin-left: 20px;
@@ -169,9 +169,9 @@ li:nth-child(even){
   overflow: hidden;
 }
 
+
 .orders {
   display: inline-block;
-  margin-top: 0px;
   margin-left: 20px;
   padding: 20px;
   background: rgb(144, 233, 255);

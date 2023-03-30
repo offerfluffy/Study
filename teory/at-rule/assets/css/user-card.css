@@ -1,7 +1,9 @@
 .user-card {
-  max-width: 700px;
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
-  border: 5px solid black;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .card-img-wrapper {
@@ -36,22 +38,32 @@
 }
 
 .contacts-list {
-
+  color: black;
 }
 
 .contacts-list-item {
-
 }
 
 .contact-link {
-
+  display: flex;
+  align-items: center;
 }
 
 .wrapper {
-  display: flex;
-  width: 40px;
+  width: 2rem;
 }
 
 .contact-link-text {
+  margin-left: 10px;
+}
 
+@media screen and (max-width: 576px) {
+  .user-card {
+    max-width: 300px;
+    flex-direction: column;
+  }
+
+  :root {
+    font-size: 14px;
+  }
 }

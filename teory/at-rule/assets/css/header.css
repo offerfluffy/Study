@@ -45,7 +45,7 @@
   }
 }
 /* більше або дорівнює ширині */
-@media screen and (min-width: 500px)  {
+@media screen and (min-width: 500px) {
   .header {
     background-color: purple;
   }
